@@ -14,26 +14,26 @@
  * limitations under the License.
  */
 
-package org.aospextended.support.preference;
+package org.arcana.support.preference;
 
 import android.content.Context;
 import android.util.AttributeSet;
 
-public class SecureSettingSeekBarPreference extends CustomSeekBarPreference {
+public class SystemSettingSeekBarPreference extends CustomSeekBarPreference {
 
-    public SecureSettingSeekBarPreference(Context context, AttributeSet attrs, int defStyle) {
+    public SystemSettingSeekBarPreference(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
-        setPreferenceDataStore(new SecureSettingsStore(context.getContentResolver()));
+        setPreferenceDataStore(new SystemSettingsStore(context.getContentResolver()));
     }
 
-    public SecureSettingSeekBarPreference(Context context, AttributeSet attrs) {
+    public SystemSettingSeekBarPreference(Context context, AttributeSet attrs) {
         super(context, attrs);
-        setPreferenceDataStore(new SecureSettingsStore(context.getContentResolver()));
+        setPreferenceDataStore(new SystemSettingsStore(context.getContentResolver()));
     }
 
-    public SecureSettingSeekBarPreference(Context context) {
+    public SystemSettingSeekBarPreference(Context context) {
         super(context, null);
-        setPreferenceDataStore(new SecureSettingsStore(context.getContentResolver()));
+        setPreferenceDataStore(new SystemSettingsStore(context.getContentResolver()));
     }
 
     @Override

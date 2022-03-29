@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.aospextended.support.preference;
+package org.arcana.support.preference;
 
 import android.content.Context;
 import android.text.TextUtils;
